@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Background Color Changer</title>
+  <style>
+      h1{
+         background-color:dimgray;
+         padding:10px 30px;
+         color:#fff;
+         border-radius:10px;
+      }
+      #btn{
+          padding: 10px 30px;
+          color:#fff;
+          outline:none;
+          border:0;
+          cursor:pointer;
+          background:dimgray;
+          margin-top: 20px;
+          font-size:1.5em;
+          letter-spacing: 3px;
+          
+      }
+      body{
+          width:100%;
+          min-height: 100vh;
+          display:flex;
+          align-items:center;
+          flex-direction:column;
+          justify-content:center;
+      }
+  </style>
+</head>
+<body>
+  <h1>Background Color Changer</h1>
+  <p>Enter a color name:</p>
+  <input type="text" id="colorInput">
+  <button  id="btn" onclick="changeBackgroundColor()">Change Color</button>
+
+  <script>
+    function changeBackgroundColor() {
+      var color = document.getElementById("colorInput").value;
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>
